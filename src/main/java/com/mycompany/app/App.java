@@ -27,7 +27,6 @@ public class App
         System.out.println( "This is a new line!" );
         System.out.println( "This is a new line!" );
         login();
-
     }
     
     // Simulating hard-coded credentials to trigger SonarQube rule
