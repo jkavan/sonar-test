@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.2" sequence="0" timestamp="1708958741950" analysisTimestamp="1708958747341" release="">
+  <Project>
+    <Jar>/Users/jkavander/repos/ixxus/ixxus-pmo-tool/test-project/my-app/target/classes/com/mycompany/app/App.class</Jar>
+    <Jar>/Users/jkavander/repos/ixxus/ixxus-pmo-tool/test-project/my-app/target/test-classes/com/mycompany/app/AppTest.class</Jar>
+    <AuxClasspathEntry>/Users/jkavander/repos/ixxus/ixxus-pmo-tool/test-project/my-app/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/opt/homebrew/Cellar/openjdk@11/11.0.22/libexec/openjdk.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/jkavander/repos/ixxus/ixxus-pmo-tool/test-project/my-app/target/test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/jkavander/.m2/repository/junit/junit/4.11/junit-4.11.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/jkavander/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/jkavander/repos/ixxus/ixxus-pmo-tool/test-project/my-app/target/sonar/findbugs/annotations.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/jkavander/repos/ixxus/ixxus-pmo-tool/test-project/my-app/target/sonar/findbugs/jsr305.jar</AuxClasspathEntry>
+    <WrkDir>/Users/jkavander/repos/ixxus/ixxus-pmo-tool/test-project/my-app/target/sonar</WrkDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 26 Feb 2024 16:45:41 +0200" total_classes="2" referenced_classes="17" total_bugs="0" total_size="12" num_packages="1" java_version="11.0.22" vm_version="11.0.22+0" cpu_seconds="1.76" clock_seconds="0.74" peak_mbytes="609.78" alloc_mbytes="9216.00" gc_seconds="0.02">
+    <FileStats path="com/mycompany/app/App.java" bugCount="0" size="6"/>
+    <FileStats path="com/mycompany/app/AppTest.java" bugCount="0" size="6"/>
+    <PackageStats package="com.mycompany.app" total_bugs="0" total_types="2" total_size="12">
+      <ClassStats class="com.mycompany.app.App" sourceFile="App.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.mycompany.app.AppTest" sourceFile="AppTest.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="69" invocations="372" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="5414" standardDeviationMicrosecondsPerInvocation="447"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectStatistics" totalMilliseconds="29" invocations="17" avgMicrosecondsPerInvocation="1749" maxMicrosecondsPerInvocation="19571" standardDeviationMicrosecondsPerInvocation="4535"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="19" invocations="115" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="7268" standardDeviationMicrosecondsPerInvocation="692"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="14" invocations="17" avgMicrosecondsPerInvocation="865" maxMicrosecondsPerInvocation="5397" standardDeviationMicrosecondsPerInvocation="1380"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="11" invocations="17" avgMicrosecondsPerInvocation="651" maxMicrosecondsPerInvocation="6099" standardDeviationMicrosecondsPerInvocation="1411"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
