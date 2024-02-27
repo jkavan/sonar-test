@@ -11,6 +11,21 @@ public class App
     {
         System.out.println( "Hello World!" );
         System.out.println( "This is a new line!" );
+        System.out.println( "This is a new line!" );
+        System.out.println( "This is a new line!" );
+        System.out.println( "This is a new line!" );
+        System.out.println( "This is a new line!" );
+        System.out.println( "This is a new line!" );
+        System.out.println( "This is a new line!" );
+        System.out.println( "This is a new line!" );
+        System.out.println( "This is a new line!" );
+        System.out.println( "This is a new line!" );
+        System.out.println( "This is a new line!" );
+        System.out.println( "This is a new line!" );
+        System.out.println( "This is a new line!" );
+        System.out.println( "This is a new line!" );
+        System.out.println( "This is a new line!" );
+        System.out.println( "This is a new line!" );
         login();
     }
     
@@ -20,4 +35,10 @@ public class App
         String password = "password123"; // Hard-coded password
         System.out.println("Hello " + username + ". Password: " + password);
     }
+
+    private static void unusedMethod() {
+        System.out.println("This method is never used.");
+    }
+
+    public String exposedField;
 }
