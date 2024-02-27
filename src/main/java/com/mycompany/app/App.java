@@ -6,16 +6,18 @@ package com.mycompany.app;
  */
 public class App 
 {
+  // TODO: Remove this comment
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
         System.out.println( "This is a new line!" );
-        printDuplicateMessage();
+        login();
     }
     
-    // Intentionally duplicating code to trigger SonarQube rule
-    public static void printDuplicateMessage() {
-        System.out.println( "Hello World!" );
-        System.out.println( "This is a new line!" );
+    // Simulating hard-coded credentials to trigger SonarQube rule
+    public static void login() {
+        String username = "admin";
+        String password = "password123"; // Hard-coded password
+        System.out.println("Hello " + username + ". Password: " + password);
     }
 }
