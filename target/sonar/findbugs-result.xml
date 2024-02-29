@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.8.2" sequence="0" timestamp="1708958741950" analysisTimestamp="1708958747341" release="">
+<BugCollection version="4.8.2" sequence="0" timestamp="1709033157023" analysisTimestamp="1709033161183" release="">
   <Project>
     <Jar>/Users/jkavander/repos/ixxus/ixxus-pmo-tool/test-project/my-app/target/classes/com/mycompany/app/App.class</Jar>
     <Jar>/Users/jkavander/repos/ixxus/ixxus-pmo-tool/test-project/my-app/target/test-classes/com/mycompany/app/AppTest.class</Jar>
@@ -13,20 +13,56 @@
     <AuxClasspathEntry>/Users/jkavander/repos/ixxus/ixxus-pmo-tool/test-project/my-app/target/sonar/findbugs/jsr305.jar</AuxClasspathEntry>
     <WrkDir>/Users/jkavander/repos/ixxus/ixxus-pmo-tool/test-project/my-app/target/sonar</WrkDir>
   </Project>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" instanceHash="710e71bdeecf7075a93f37474fda5f69" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused public or protected field</ShortMessage>
+    <LongMessage>Unused public or protected field: com.mycompany.app.App.exposedField</LongMessage>
+    <Class classname="com.mycompany.app.App" primary="true">
+      <SourceLine classname="com.mycompany.app.App" start="7" end="41" sourcefile="App.java" sourcepath="com/mycompany/app/App.java">
+        <Message>At App.java:[lines 7-41]</Message>
+      </SourceLine>
+      <Message>In class com.mycompany.app.App</Message>
+    </Class>
+    <Field classname="com.mycompany.app.App" name="exposedField" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="com.mycompany.app.App" sourcefile="App.java" sourcepath="com/mycompany/app/App.java">
+        <Message>In App.java</Message>
+      </SourceLine>
+      <Message>Field com.mycompany.app.App.exposedField</Message>
+    </Field>
+    <SourceLine classname="com.mycompany.app.App" sourcefile="App.java" sourcepath="com/mycompany/app/App.java" synthetic="true">
+      <Message>In App.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" abbrev="UuF" category="STYLE">
+    <ShortDescription>Unused public or protected field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never used.&nbsp;
+The field is public or protected, so perhaps
+    it is intended to be used with classes not seen as part of the analysis. If not,
+consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UuF">
+    <Description>Unused field</Description>
+  </BugCode>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Mon, 26 Feb 2024 16:45:41 +0200" total_classes="2" referenced_classes="17" total_bugs="0" total_size="12" num_packages="1" java_version="11.0.22" vm_version="11.0.22+0" cpu_seconds="1.76" clock_seconds="0.74" peak_mbytes="609.78" alloc_mbytes="9216.00" gc_seconds="0.02">
-    <FileStats path="com/mycompany/app/App.java" bugCount="0" size="6"/>
+  <FindBugsSummary timestamp="Tue, 27 Feb 2024 13:25:57 +0200" total_classes="2" referenced_classes="17" total_bugs="1" total_size="38" num_packages="1" java_version="11.0.22" vm_version="11.0.22+0" cpu_seconds="1.69" clock_seconds="0.69" peak_mbytes="550.46" alloc_mbytes="9216.00" gc_seconds="0.01" priority_2="1">
+    <FileStats path="com/mycompany/app/App.java" bugCount="1" size="32" bugHash="1a13919adcab0c649ec744814657fa45"/>
     <FileStats path="com/mycompany/app/AppTest.java" bugCount="0" size="6"/>
-    <PackageStats package="com.mycompany.app" total_bugs="0" total_types="2" total_size="12">
-      <ClassStats class="com.mycompany.app.App" sourceFile="App.java" interface="false" size="6" bugs="0"/>
+    <PackageStats package="com.mycompany.app" total_bugs="1" total_types="2" total_size="38" priority_2="1">
+      <ClassStats class="com.mycompany.app.App" sourceFile="App.java" interface="false" size="32" bugs="1" priority_2="1"/>
       <ClassStats class="com.mycompany.app.AppTest" sourceFile="AppTest.java" interface="false" size="6" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="69" invocations="372" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="5414" standardDeviationMicrosecondsPerInvocation="447"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectStatistics" totalMilliseconds="29" invocations="17" avgMicrosecondsPerInvocation="1749" maxMicrosecondsPerInvocation="19571" standardDeviationMicrosecondsPerInvocation="4535"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="19" invocations="115" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="7268" standardDeviationMicrosecondsPerInvocation="692"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="14" invocations="17" avgMicrosecondsPerInvocation="865" maxMicrosecondsPerInvocation="5397" standardDeviationMicrosecondsPerInvocation="1380"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="11" invocations="17" avgMicrosecondsPerInvocation="651" maxMicrosecondsPerInvocation="6099" standardDeviationMicrosecondsPerInvocation="1411"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="70" invocations="372" avgMicrosecondsPerInvocation="190" maxMicrosecondsPerInvocation="5223" standardDeviationMicrosecondsPerInvocation="443"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectStatistics" totalMilliseconds="27" invocations="17" avgMicrosecondsPerInvocation="1613" maxMicrosecondsPerInvocation="17054" standardDeviationMicrosecondsPerInvocation="3946"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="20" invocations="395" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="9679" standardDeviationMicrosecondsPerInvocation="488"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="17" invocations="115" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="6511" standardDeviationMicrosecondsPerInvocation="620"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="15" invocations="17" avgMicrosecondsPerInvocation="933" maxMicrosecondsPerInvocation="4934" standardDeviationMicrosecondsPerInvocation="1322"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
