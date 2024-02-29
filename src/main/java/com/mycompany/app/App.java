@@ -10,4 +10,11 @@ public class App
     {
         System.out.println( "Hello World!" );
     }
+        
+    private static void unusedMethod() {
+        System.out.println("This method is never used.");
+    }
+
+    public String exposedField;
+
 }
