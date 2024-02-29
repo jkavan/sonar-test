@@ -11,6 +11,7 @@ public class App
     {
         System.out.println( "Hello World!" );
         System.err.println("Hello");
+
     }
     
     private static void unusedMethod() {
